@@ -1,0 +1,2 @@
+sips -s format jpeg -s formatOptions high -s dpiWidth 72 -s dpiHeight 72 -m '/System/Library/ColorSync/Profiles/sRGB Profile.icc' -Z 400 *.HEIC --out ./thumbs/ 
+sips -s format jpeg -s formatOptions high -s dpiWidth 72 -s dpiHeight 72 -m '/System/Library/ColorSync/Profiles/sRGB Profile.icc' -Z 1600 *.HEIC --out ./resized/

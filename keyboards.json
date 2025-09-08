@@ -1,0 +1,30 @@
+{
+    "qk75": {
+        "name": "QK75 Keyboard",
+        "condition": "Used",
+        "images": {
+            "full": [
+                "../../images/qk75/full/IMG_2805.jpg",
+                "../../images/qk75/full/IMG_2806.jpg",
+                "../../images/qk75/full/IMG_2807.jpg",
+                "../../images/qk75/full/IMG_2808.jpg",
+                "../../images/qk75/full/IMG_2809.jpg",
+                "../../images/qk75/full/IMG_2810.jpg"
+            ],
+            "thumbs": [
+                "../../images/qk75/thumbs/IMG_2805.jpg",
+                "../../images/qk75/thumbs/IMG_2806.jpg",
+                "../../images/qk75/thumbs/IMG_2807.jpg",
+                "../../images/qk75/thumbs/IMG_2808.jpg",
+                "../../images/qk75/thumbs/IMG_2809.jpg",
+                "../../images/qk75/thumbs/IMG_2810.jpg"
+            ]
+        },
+        "specs": {
+            "layout": "75%",
+            "switch_type": "Gateron",
+            "keycap_material": "PBT",
+            "rgb_lighting": "Yes"
+        }
+    }
+}
