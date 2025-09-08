@@ -7,47 +7,82 @@
     <!-- <link rel="icon" type="image/x-icon" href="/static/favicon.ico"> -->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <style>
+        /* CSS */
+        :root {
+            font-family: Inter, sans-serif;
+            font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+        }
+            @supports (font-variation-settings: normal) {
+            :root { font-family: InterVariable, sans-serif; }
+        }
+    </style>
 </head>
 <body>
-  <h1>QK75 v1</h1>
-  <p><a href="https://qwertyqop.com/pages/qk75?srsltid=AfmBOorhslQ5i70q3CR6hG1AeB9v8m4MirKa0ZEgemQ243o6LFhCA5Yl">Original Product Page</a></p>
-
-    <a href="../../images/qk75/full/IMG_2805.jpg" data-fancybox="gallery" data-caption="Caption #1">
-        <img src="../../images/qk75/thumbs/IMG_2805.jpg" />
-    </a>
-    <a href="../../images/qk75/full/IMG_2806.jpg" data-fancybox="gallery" data-caption="Caption #1">
-        <img src="../../images/qk75/thumbs/IMG_2806.jpg" />
-    </a>
-    <a href="../../images/qk75/full/IMG_2807.jpg" data-fancybox="gallery" data-caption="Caption #1">
-        <img src="../../images/qk75/thumbs/IMG_2807.jpg" />
-    </a>
-    <a href="../../images/qk75/full/IMG_2808.jpg" data-fancybox="gallery" data-caption="Caption #1">
-        <img src="../../images/qk75/thumbs/IMG_2808.jpg" />
-    </a>
-    <a href="../../images/qk75/full/IMG_2809.jpg" data-fancybox="gallery" data-caption="Caption #1">
-        <img src="../../images/qk75/thumbs/IMG_2809.jpg" />
-    </a>
-    <a href="../../images/qk75/full/IMG_2810.jpg" data-fancybox="gallery" data-caption="Caption #1">
-        <img src="../../images/qk75/thumbs/IMG_2810.jpg" />
-    </a>
-
-    <div id="specs">
-        <h2>Specifications</h2>
-        <ul>
-            <li>Condition: Used</li>
-            <li>Case: Black</li>
-            <li>Weight: Black Mirror Polished Stainless Steel PVD</li>
-            <li>Plate: FR4</li>
-            <li>PCB: Hot-swappable</li>
-            <li>Additional Notes: Stabs included</li>
-        </ul>
+    <div class="lg:flex">
+        <div class="w-full p-4 bg-gray-200">
+            <p class="text-2xl font-semibold">QK75 v1</p>
+        </div>
     </div>
+    <div class="flex">
+        <div class="flex-initial w-250 p-4">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div>
+                    <a href="../../images/qk75/full/IMG_2805.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                        <img class="h-auto max-w-full rounded-lg" src="../../images/qk75/thumbs/IMG_2805.jpg" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="../../images/qk75/full/IMG_2806.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                        <img class="h-auto max-w-full rounded-lg" src="../../images/qk75/thumbs/IMG_2806.jpg" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="../../images/qk75/full/IMG_2807.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                        <img class="h-auto max-w-full rounded-lg" src="../../images/qk75/thumbs/IMG_2807.jpg" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="../../images/qk75/full/IMG_2808.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                        <img class="h-auto max-w-full rounded-lg" src="../../images/qk75/thumbs/IMG_2808.jpg" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="../../images/qk75/full/IMG_2809.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                        <img class="h-auto max-w-full rounded-lg" src="../../images/qk75/thumbs/IMG_2809.jpg" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="../../images/qk75/full/IMG_2810.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                        <img class="h-auto max-w-full rounded-lg" src="../../images/qk75/thumbs/IMG_2810.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="flex-initial w-100 p-4">
+            <p class="text-xl font-semibold">Specifications</p>
+            <ul>
+                <li><b>Condition:</b> Used</li>
+                <li><b>Case:</b> Black</li>
+                <li><b>Weight:</b> Black Mirror Polished Stainless Steel PVD</li>
+                <li><b>Plate:</b> FR4</li>
+                <li><b>PCB:</b> Hot-swappable</li>
+                <li><b>Additional Notes:</b> Stabs included</li>
+            </ul>
+        </div>
+    </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
     <script>
-        Fancybox.bind("[data-fancybox]", {
-            // Your options go here
-        });
+        Fancybox.bind("[data-fancybox]", {});
     </script>
 </body>
 </html>
