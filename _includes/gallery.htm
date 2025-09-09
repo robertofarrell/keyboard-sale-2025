@@ -1,0 +1,14 @@
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+    {% assign images = site.static_files | where_exp: "image", "image.path contains page.kbid and image.path contains '/thumbs'" %}
+        {% for image in images %}
+            {% if image.extname == '.jpg' %}
+            {% assign image_name = image.basename %}
+            {% assign full_image_path = "/assets/images/" | append: page.kbid | append: "/full/" | append: image_name | append: image.extname %}
+            <div>
+                <a href="{{ full_image_path }}" data-fancybox="gallery" data-caption="{{ page.title }} Image">
+                    <img class="h-auto max-w-full rounded-lg" src="{{ image.path }}" alt="{{ page.title }} Image">
+                </a>
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
