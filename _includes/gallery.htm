@@ -5,8 +5,8 @@
             {% assign image_name = image.basename %}
             {% assign full_image_path = "/assets/images/" | append: page.kbid | append: "/full/" | append: image_name | append: image.extname %}
             <div>
-                <a href="{{ full_image_path }}" data-fancybox="gallery" data-caption="{{ page.title }} Image">
-                    <img class="h-auto max-w-full rounded-lg" src="{{ image.path }}" alt="{{ page.title }} Image">
+                <a href="{{ full_image_path | relative_url }}" data-fancybox="gallery" data-caption="{{ page.title }} Image">
+                    <img class="h-auto max-w-full rounded-lg" src="{{ image.path | relative_url }}" alt="{{ page.title }} Image">
                 </a>
             </div>
         {% endif %}
